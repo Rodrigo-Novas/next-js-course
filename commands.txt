@@ -1,0 +1,85 @@
+1-
+npx create-next-app@latest
+
+ó
+
+yarn create next-app
+
+2-
+
+npm run dev (corremos server)
+
+3-
+
+npx add <paquete>
+
+* Las pages contienen nuestros archivos js, los nombres de esos archivos automaticamente van a ser el nombre de la ruta
+
+por ej:
+
+si tengo el archivo about.js
+
+voy a tener una ruta en dev tipo localhost:3000/about
+
+
+Si tengo un nuevo directorio dentro de pages ej contact/contacto.js la ruta va a ser localhost:3000/contact/contacto
+
+----
+
+_app.js es el punto de entrada
+
+
+la carpeta public van a estar los archivos estaticos tipo imagenes o estilos estaticos que no vayan a cambiar
+
+
+la carpeta styles es donde van a estar los estilos
+
+
+eslintrc.json es un linter de next
+
+la carpeta api es una api rest lista para funcionar, para acceder directamente colocas el /api/hello o el endpoint que yo quiera
+
+
+Next usa Static generation hasta donde sea posible, pero se puede usar server-side rendering
+
+Server-side renderig: El html es generado por cada request.
+
+El static generation: es cuando el html se genera en el build time.
+
+
+
+Trabajar con typescript
+
+
+https://nextjs.org/learn/excel/typescript/create-tsconfig
+
+
+touch tsconfig.json
+
+
+# If you’re using npm
+npm install --save-dev typescript @types/react @types/node
+
+# If you’re using Yarn
+yarn add --dev typescript @types/react @types/node
+
+
+
+Deployment
+
+
+https://nextjs.org/docs/deployment
+
+
+npm run build
+
+y despues
+
+npm run start (para correr)
+
+
+Docker
+
+imagen recomendada por next
+
+https://gist.github.com/Klerith/b5459b1daa4fc6d539ac373855c98039
